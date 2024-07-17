@@ -16,7 +16,8 @@
                 <img src=".\assets\Logo.png" alt="Logo de Alura">
             </div>
             <div class="pantalla_principal_izquierda_contenedortext">
-                <textarea id='TextoUsuario' type="text" placeholder="Ingrese el texto aquí" class="pantalla_principal_izquierda_contenedortext_texto"></textarea>
+                <textarea id='TextoUsuario' type="text" placeholder="Ingrese el texto aquí" 
+                class="pantalla_principal_izquierda_contenedortext_texto" maxlength="300"></textarea>
             </div>
             <div class="pantalla_principal_izquierda_consejo">
                 <img src=".\assets\Tips.png" alt="Consejos">
@@ -28,12 +29,16 @@
         </div>
         <div class="pantalla_principal_derecha">
             <div class="pantalla_principal_derecha_resultado">
-                <div>
-                    <img src=".\assets\Muñeco.png" alt="Imagen de persona caricatura">
-                </div>
-                <p>
-                    No hay texto
-                </p>
+                    <img src=".\assets\Muñeco.png" alt="Imagen de persona caricatura" 
+                    class="pantalla_principal_derecha_resultado_contenedor_imagen">
+                    <section>
+                        <h2 class="pantalla_principal_derecha_resultado_subtitulo">
+                            Ningún mensaje fue encontrado
+                        </h2>
+                        <p class="pantalla_principal_derecha_resultado_texto">
+                            Ingresa el texto que desees encriptar o desencriptar
+                        </p>
+                    </section>
             </div>
         </div>
     </main>
