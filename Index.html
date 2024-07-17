@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="Stylesheet" href=".\style\style.css">
 </head>
 <body>
     <header>
-        <img src=".\assets\Logo@2x.png"
+        
     </header>
-    <main>
-
+    <main class="pantalla_principal">
+        <div class="pantalla_principal_izquierda">
+            <div class="pantalla_principal_izquierda_logo">
+                <img src=".\assets\Logo.png" alt="Logo de Alura">
+            </div>
+            <div class="pantalla_principal_izquierda_contenedortext">
+                <textarea id='TextoUsuario' type="text" placeholder="Ingrese el texto aquí" class="pantalla_principal_izquierda_contenedortext_texto"></textarea>
+            </div>
+            <div class="pantalla_principal_izquierda_consejo">
+                <img src=".\assets\Tips.png" alt="Consejos">
+            </div>
+            <div class="pantalla_principal_izquierda_botones">
+                <button class="pantalla_principal_izquierda_botones_izquierda">Encriptador</button>
+                <button class="pantalla_principal_izquierda_botones_derecha">Desencriptar</button>
+            </div>
+        </div>
+        <div class="pantalla_principal_derecha">
+            <div class="pantalla_principal_derecha_resultado">
+                <div>
+                    <img src=".\assets\Muñeco.png" alt="Imagen de persona caricatura">
+                </div>
+                <p>
+                    No hay texto
+                </p>
+            </div>
+        </div>
     </main>
     <footer>
 
