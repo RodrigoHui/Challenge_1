@@ -16,34 +16,32 @@
                 <img src=".\assets\Logo.png" alt="Logo de Alura">
             </div>
             <div class="pantalla_principal_izquierda_contenedortext">
-                <textarea id='TextoUsuario' type="text" placeholder="Ingrese el texto aquí" 
+                <textarea id="textousuario" type="text" placeholder="Ingrese el texto aquí" 
                 class="pantalla_principal_izquierda_contenedortext_texto" maxlength="300"></textarea>
             </div>
             <div class="pantalla_principal_izquierda_consejo">
                 <img src=".\assets\Tips.png" alt="Consejos">
             </div>
             <div class="pantalla_principal_izquierda_botones">
-                <button class="pantalla_principal_izquierda_botones_izquierda">Encriptador</button>
-                <button class="pantalla_principal_izquierda_botones_derecha">Desencriptar</button>
+                <a class="pantalla_principal_izquierda_botones_izquierda" onclick="guardartexto();"  >Encriptador</a>
+                <a class="pantalla_principal_izquierda_botones_derecha">Desencriptar</a>
             </div>
         </div>
-        <div class="pantalla_principal_derecha">
+        <div class="pantalla_principal_derecha" id="assets">
             <div class="pantalla_principal_derecha_resultado">
-                    <img src=".\assets\Muñeco.png" alt="Imagen de persona caricatura" 
-                    class="pantalla_principal_derecha_resultado_contenedor_imagen">
-                    <section>
-                        <h2 class="pantalla_principal_derecha_resultado_subtitulo">
+                <img src=".\assets\Muñeco.png" alt="Imagen de persona caricatura" 
+                class="pantalla_principal_derecha_resultado_contenedor_imagen">
+                <section>
+                    <p class="pantalla_principal_derecha_resultado_subtitulo">
                             Ningún mensaje fue encontrado
-                        </h2>
-                        <p class="pantalla_principal_derecha_resultado_texto">
+                    </p>
+                    <p class="pantalla_principal_derecha_resultado_texto">
                             Ingresa el texto que desees encriptar o desencriptar
-                        </p>
-                    </section>
+                    </p>
+                </section>  
             </div>
         </div>
     </main>
-    <footer>
-
-    </footer>
+    <script src=".\javascript\app.js"></script>
 </body>
 </html>
