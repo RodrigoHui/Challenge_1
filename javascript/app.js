@@ -2,10 +2,10 @@ function encriptarTexto(){
     let textoingresado = document.getElementById("textousuario").value;
     if(textoingresado){   
         let textoencriptado = modificarTexto(textoingresado, 'encriptar');
-        cambiarvalores(textoencriptado)
-        alert(textoencriptado);
+        limpiarcaja();
+        cambiarvalores(textoencriptado);
     }else{
-        alert(`Por favor ingrese un valor`);
+        alert(`Por favor ingrese el texto a `);
     }
 }
 
@@ -13,8 +13,8 @@ function desencriptarTexto(){
     let textoingresado = document.getElementById("textousuario").value;
     if(textoingresado){   
         let textodesencriptado = modificarTexto(textoingresado, 'desencriptar');
+        limpiarcaja();
         cambiarvalores(textodesencriptado)
-        alert(textodesencriptado);
     }else{
         alert(`Por favor ingrese un valor`);
     }
@@ -51,13 +51,25 @@ function cambiarvalores(textomodificado){
     let cambiosassetst = `
 <div class="pantalla_principal_derecha_resultado_cambio">
     <section>
-        <textarea disabled class="pantalla_principal_derecha_resultado_subtitulo_cambio">${textomodificado}
+        <textarea disabled id="textoresultado" class="pantalla_principal_derecha_resultado_subtitulo_cambio">${textomodificado}
         </textarea>
-        <button class="pantalla_principal_derecha_resultado_button_cambio">
+        <button onclick="copiarTexto();" class="pantalla_principal_derecha_resultado_button_cambio">
         copiar
         </button>
         </section>
 </div>
     `;
     return assetsviejos.innerHTML = cambiosassetst;
+}
+
+function copiarTexto(){
+    let textoresultado = document.getElementById("textoresultado")
+    textoresultado.select();
+    textoresultado.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(textoresultado.value);
+    alert("Copiado")
+}
+
+function limpiarcaja(){
+    document.getElementById("textousuario").value="";
 }

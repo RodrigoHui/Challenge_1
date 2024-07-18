@@ -58,6 +58,8 @@ body{
     font-family: "Inter", sans-serif;
     color: var(--color-texto-izquierda);
     font-size: 2rem;
+    overflow-y: hidden;
+    outline: none;
 }
 
 .pantalla_principal_izquierda_botones{
@@ -92,7 +94,7 @@ body{
 .pantalla_principal_derecha_resultado{
     background-color: white;
     margin: 5% 5% 0% 0%;
-    padding: 0% 0% 55% 0%;
+    padding: 0% 0% 50% 0%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -125,7 +127,7 @@ body{
 .pantalla_principal_derecha_resultado_cambio{
     background-color: white;
     margin: 5% 5% 0% 0%;
-    padding: 5%;
+    padding: 5% 0% 5% 3%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -140,6 +142,7 @@ body{
     width: 100%;
     padding-bottom: 680px;
     border: none;
+    overflow-y: hidden;
 }
 
 .pantalla_principal_derecha_resultado_button_cambio{
