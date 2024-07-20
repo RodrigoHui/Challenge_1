@@ -51,9 +51,9 @@ function cambiarvalores(textomodificado){
     let cambiosassetst = `
 <div class="pantalla_principal_derecha_resultado_cambio">
     <section>
-        <textarea disabled id="textoresultado" class="pantalla_principal_derecha_resultado_subtitulo_cambio">${textomodificado}
+        <textarea disabled id="textoresultado" class="pantalla_principal_derecha_resultado_encriptado">${textomodificado}
         </textarea>
-        <button onclick="copiarTexto();" class="pantalla_principal_derecha_resultado_button_cambio">
+        <button onclick="copiarTexto();" class="pantalla_principal_derecha_resultado_button_copiar">
         copiar
         </button>
         </section>
