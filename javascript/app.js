@@ -3,7 +3,7 @@ function encriptarTexto(){
     if(textoingresado){   
         let textoencriptado = modificarTexto(textoingresado, 'encriptar');
         limpiarcaja();
-        cambiarvalores(textoencriptado);
+        cambiarDiseño(textoencriptado);
     }else{
         alert(`Por favor ingrese el texto a `);
     }
@@ -14,7 +14,7 @@ function desencriptarTexto(){
     if(textoingresado){   
         let textodesencriptado = modificarTexto(textoingresado, 'desencriptar');
         limpiarcaja();
-        cambiarvalores(textodesencriptado)
+        cambiarDiseño(textodesencriptado)
     }else{
         alert(`Por favor ingrese un valor`);
     }
@@ -46,7 +46,7 @@ function modificarTexto(texto, accion){
 }
 
 
-function cambiarvalores(textomodificado){
+function cambiarDiseño(textomodificado){
     let assetsviejos = document.getElementById("assets");
     let cambiosassetst = `
 <div class="pantalla_principal_derecha_resultado_cambio">
