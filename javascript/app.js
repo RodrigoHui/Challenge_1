@@ -23,21 +23,21 @@ function desencriptarTexto(){
 function modificarTexto(texto, accion){
     if (accion == 'encriptar'){
         let resultado = texto.replace(/[aeiou]/g, function(coicidencias){
-            if (coicidencias === 'a') return 'ppe';
-            if (coicidencias === 'e') return 'asda';
-            if (coicidencias === 'i') return 'grs';
-            if (coicidencias === 'o') return 'gas';
-            if (coicidencias === 'u') return 'gaw';
+            if (coicidencias === 'a') return 'ai';
+            if (coicidencias === 'e') return 'enter';
+            if (coicidencias === 'i') return 'imes';
+            if (coicidencias === 'o') return 'ober';
+            if (coicidencias === 'u') return 'ufat';
             return coicidencias;
         });
         return resultado
     }else if (accion == 'desencriptar'){
-        let resultado = texto.replace(/ppe|asda|grs|gas|gaw|/g, function(coicidencias){
-            if (coicidencias === 'ppe') return 'a';
-            if (coicidencias === 'asda') return 'e';
-            if (coicidencias === 'grs') return 'i';
-            if (coicidencias === 'gas') return 'o';
-            if (coicidencias === 'gaw') return 'u';
+        let resultado = texto.replace(/ai|enter|imes|ober|ufat|/g, function(coicidencias){
+            if (coicidencias === 'ai') return 'a';
+            if (coicidencias === 'enter') return 'e';
+            if (coicidencias === 'imes') return 'i';
+            if (coicidencias === 'ober') return 'o';
+            if (coicidencias === 'ufat') return 'u';
             return coicidencias
         });
         return resultado
